@@ -9,8 +9,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.myapplication.MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="bind_server"
+        android:id="@+id/bind_server"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="unbind_server"
+        android:id="@+id/unbind_server"
+        android:layout_alignBottom="@+id/bind_server"
+        android:layout_toEndOf="@+id/bind_server" />
 </RelativeLayout>
